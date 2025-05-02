@@ -37,7 +37,7 @@ select,
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  padding: 0.2rem;
+  padding: 0.5rem 0.2rem 1.5rem;
   align-self: flex-start;
 }
 
@@ -200,18 +200,18 @@ input[type="checkbox"]:checked ~ .task {
 
 @media (max-width: 600px) {
   .todoContainer {
-    max-width: 500px;
+    max-width: 450px;
   }
 }
 
 @media (max-width: 500px) {
   .todoContainer {
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 
 @media (max-width: 400px) {
   .todoContainer {
-    max-width: 300px;
+    max-width: 250px;
   }
 }
