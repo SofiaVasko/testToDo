@@ -1,0 +1,201 @@
+.todoWrapper,
+.todoImg,
+.todoContainer,
+.taskContainer,
+.todoAnotherRow,
+.inputMain,
+.task,
+select,
+.btnAdd {
+  width: 100%;
+}
+
+.todoWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.todoWrapper,
+.todoRow,
+.todoContainer,
+.todoAnotherRow,
+.taskContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.taskContainer {
+  justify-content: space-between;
+  padding: 0rem 0.5rem;
+  height: 20px;
+}
+
+.todoContainer {
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.2rem;
+  align-self: flex-start;
+}
+
+.todoContainer,
+input,
+.btnAdd,
+.btnReset {
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.inputMain {
+  padding: 0rem 0rem 0rem 0.5rem;
+}
+
+.inputMain:focus {
+  border: 2px solid rgb(1, 109, 109);
+}
+
+.todoRow,
+.todoAnotherRow {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.todoAnotherRow {
+  justify-content: space-evenly;
+  gap: 0;
+}
+
+.todoImg,
+.todoContainer,
+.taskContainer,
+.todoAnotherRow,
+.inputMain,
+.task,
+select,
+.btnAdd {
+  max-width: 700px;
+}
+
+.task {
+  max-width: 520px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+select,
+.task,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+select,
+.btnAdd {
+  max-width: 130px;
+}
+
+.taskContainer,
+.task {
+  background-color: rgba(58, 58, 58, 0.5);
+}
+
+.todoImg {
+  max-width: 400px;
+}
+
+.btnAdd {
+  margin-right: 0.5rem;
+}
+
+.btnReset {
+  width: 85px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.btnAdd,
+.btnReset {
+  border: 5px double rgb(48, 48, 48);
+}
+
+input[type="checkbox"]:checked ~ .task {
+  text-decoration: line-through;
+}
+
+.inputMain,
+.btnAdd {
+  height: 30px;
+}
+
+.pinned,
+.btnAdd,
+.btnReset {
+  background-color: rgb(1, 109, 109);
+}
+
+.pinned {
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 1250px) {
+  .todoImg {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .todoContainer {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .todoContainer {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .todoContainer {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .todoWrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .todoContainer {
+    align-self: center;
+  }
+
+  .todoImg {
+    padding: 1rem 0rem;
+  }
+
+  .btnReset {
+    margin: 0rem 0rem 1.5rem;
+  }
+
+  .todoContainer {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 450px) {
+  select,
+  .btnAdd {
+    max-width: 40px;
+  }
+}

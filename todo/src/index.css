@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Griffy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Elsie", serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: rgb(1, 109, 109);
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.1);
+  color: rgb(48, 48, 48);
+}
