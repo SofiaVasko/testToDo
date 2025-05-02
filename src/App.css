@@ -178,6 +178,7 @@ input[type="checkbox"]:checked ~ .task {
 
   .todoContainer {
     align-self: center;
+    max-width: 600px;
   }
 
   .todoImg {
@@ -188,14 +189,29 @@ input[type="checkbox"]:checked ~ .task {
     margin: 0rem 0rem 1.5rem;
   }
 
-  .todoContainer {
-    max-width: 600px;
-  }
 }
 
 @media (max-width: 450px) {
   select,
   .btnAdd {
     max-width: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .todoContainer {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .todoContainer {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .todoContainer {
+    max-width: 300px;
   }
 }
