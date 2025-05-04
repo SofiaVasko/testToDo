@@ -145,16 +145,17 @@ function App() {
           >
             <input
               type="checkbox"
+              id={task.id}
+              name={task.id}
               checked={task.checkbox}
               onChange={() => handleCheckbox(task.id)}
             />
-            <input
-              type="text"
-              value={task.text}
-              readOnly
-              onClick={() => handleCheckbox(task.id)}
+            <label
+              htmlFor={task.id}
               className={task.pinned ? "task pinned" : "task"}
-            />
+            >
+              {task.text}
+            </label>
             <select onChange={(e) => handleSelect(e, task.id)}>
               <option value="">...</option>
               <option value="pin">🔝 Pin on the top</option>

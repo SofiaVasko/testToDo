@@ -86,6 +86,7 @@ select,
 
 .task {
   max-width: 520px;
+  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -189,7 +190,6 @@ input[type="checkbox"]:checked ~ .task {
   .btnReset {
     margin: 0rem 0rem 1.5rem;
   }
-
 }
 
 @media (max-width: 450px) {
